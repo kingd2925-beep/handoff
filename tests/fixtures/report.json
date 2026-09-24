@@ -1,0 +1,13 @@
+{
+  "date": "2026-09-25",
+  "labelled": 120,
+  "strong": 40,
+  "split": {"train": 72, "val": 24, "test": 24},
+  "l2": 0.01,
+  "gate": 0.12,
+  "max_leak": 0.05,
+  "test_trained_at_0.5": {"accuracy": 0.875, "strong_recall": 0.9, "cheap_recall": 0.86, "hard_sent_cheap": 1, "easy_sent_strong": 2, "n": 24},
+  "test_zero_shot_at_0.5": {"accuracy": 0.625, "strong_recall": 0.5, "cheap_recall": 0.7, "hard_sent_cheap": 4, "easy_sent_strong": 5, "n": 24},
+  "test_gate": {"cut": 0.12, "to_cheap": 0.42, "hard_leak": 0.0},
+  "test_gate_table": [{"cut": 0.12, "to_cheap": 0.42, "hard_leak": 0.0}]
+}

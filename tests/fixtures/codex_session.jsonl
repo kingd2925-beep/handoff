@@ -1,0 +1,5 @@
+{"timestamp":"2026-09-01T10:00:00Z","type":"session_meta","payload":{"id":"abc","cwd":"/tmp/project"}}
+{"type":"response_item","payload":{"type":"message","role":"user","content":[{"type":"input_text","text":"<user_instructions>\nbe concise\n</user_instructions>"}]}}
+{"type":"response_item","payload":{"type":"message","role":"user","content":[{"type":"input_text","text":"Write a bash script that rotates my log files daily"}]}}
+{"type":"response_item","payload":{"type":"message","role":"assistant","content":[{"type":"output_text","text":"Here is a bash script that rotates logs."}]}}
+{"type":"response_item","payload":{"type":"function_call","name":"shell","arguments":"{}"}}

@@ -1,0 +1,11 @@
+{"type":"user","isSidechain":false,"message":{"role":"user","content":"Refactor the billing module to use the new tax table"}}
+{"type":"assistant","message":{"role":"assistant","content":[{"type":"text","text":"Sure, I will refactor the billing module now."}]}}
+{"type":"user","isMeta":true,"message":{"role":"user","content":"This is a meta message injected by the harness itself"}}
+{"type":"user","isSidechain":true,"message":{"role":"user","content":"Subagent prompt: search the repo for tax tables"}}
+{"type":"user","message":{"role":"user","content":[{"type":"tool_result","tool_use_id":"t1","content":"file contents here that are long enough to pass"}]}}
+{"type":"user","message":{"role":"user","content":[{"type":"text","text":"Summarise   these meeting\n notes for me please"}]}}
+{"type":"user","message":{"role":"user","content":"<command-name>/clear</command-name> with some padding text"}}
+{"type":"user","message":{"role":"user","content":"too short"}}
+this line is not json {{{
+{"type":"user","message":{"role":"user","content":"[Request interrupted by user for tool use]"}}
+{"type":"summary","summary":"Billing refactor session summary line"}

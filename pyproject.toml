@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "handoff-router"
+version = "0.1.0"
+description = "Train a tiny local router on your own AI chat history: it decides, in ~0.3 s on a laptop, which tasks a cheap model can handle and which need the strong one."
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "Aryan Gupta" }]
+requires-python = ">=3.10"
+dependencies = ["laya>=0.3.5"]
+keywords = ["llm", "router", "model-routing", "laya", "claude-code", "local-ai", "classifier", "cost"]
+
+[project.optional-dependencies]
+test = ["pytest>=7"]
+
+[project.scripts]
+handoff = "handoff.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+handoff = ["policy.md"]

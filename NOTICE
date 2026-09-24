@@ -1,0 +1,5 @@
+handoff — third-party notices
+
+handoff is built on Laya (https://github.com/NandhaKishorM/laya, https://huggingface.co/convaiinnovations/laya),
+licensed under the Apache License 2.0. Laya's model weights are downloaded from Hugging Face on first use and are not
+redistributed here. handoff trains only a small head on top of Laya's frozen encoder.
