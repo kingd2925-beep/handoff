@@ -511,7 +511,11 @@ def main(argv=None) -> None:
         secs = render_demo(r, a.out / "demo.gif")
         print(f"demo.gif: {secs:.1f} s", file=sys.stderr)
     if "social" in todo:
-        render_social(r, a.out / "social-preview.png")
+        # the social card now lives in tools/make_social.py (the "sorter" design)
+        import subprocess
+        subprocess.run([sys.executable, str(Path(__file__).with_name("make_social.py")), "--only", "sorter",
+                        "--out", str(a.out)], check=True)
+        (a.out / "social-preview-sorter.png").replace(a.out / "social-preview.png")
     for name in ("report-card.png", "demo.gif", "social-preview.png"):
         p = a.out / name
         if p.exists():
